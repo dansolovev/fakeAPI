@@ -1,9 +1,18 @@
 {
-  "Quote": {
+    "Quote": {
     "title": { "string": {} },
     "author": { "regexp": "[A-Z][a-z]{5,10}" },
     "text": { "loremSentences": { "minLength": 100, "maxLength": 200 } },
     "type": { "string": ["quote"] },
+    "daily": { "boolean": {} },
+    "version": { "int": { "min": 0, "max": 1000000 } }
+  }
+},
+  "Affirmation": {
+    "title": { "string": {} },
+    "author": { "regexp": "[A-Z][a-z]{5,10}" },
+    "text": { "loremSentences": { "minLength": 100, "maxLength": 200 } },
+    "type": { "string": ["affirmation"] },
     "daily": { "boolean": {} },
     "version": { "int": { "min": 0, "max": 1000000 } }
   }
