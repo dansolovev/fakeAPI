@@ -1,5 +1,10 @@
 {
-  "User": {
-    "title": { "string": {} }
+  "Quote": {
+    "title": { "string": {} },
+    "author": { "regexp": "[A-Z][a-z]{5,10}" },
+    "text": { "minLength": 100, "maxLength": 250 },
+    "type": "quote",
+    "daily": { "boolean": {} },
+    "version": { "min": 0, "max": 100000 }
   }
 }
